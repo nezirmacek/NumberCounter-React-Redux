@@ -1,0 +1,15 @@
+.Counter{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+
+    color:white;
+
+    font-size:3rem;
+    border-radius: 100%;
+    user-select: none;
+    transition: background-color 0.75s;
+}

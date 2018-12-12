@@ -7,12 +7,12 @@ const Counter = ({number, color, onIncrement, onDecrement, onSetColor}) => {
         <div 
             className="Counter" 
             onClick={onIncrement} 
-            onContextMenu={
-                (e) => { 
-                    e.preventDefault(); 
+            onContextMenu = {
+                (e) => {
+                    e.preventDefault(); // prevent opening menu when righ click
                     onDecrement();
                 }
-            } 
+            }
             onDoubleClick={onSetColor}
             style={{backgroundColor: color}}>
                 {number}
@@ -20,7 +20,7 @@ const Counter = ({number, color, onIncrement, onDecrement, onSetColor}) => {
     );
 };
 
-Counter.propTypes = {
+Counter.propsTypes = {
     number: PropTypes.number,
     color: PropTypes.string,
     onIncrement: PropTypes.func,
@@ -30,10 +30,8 @@ Counter.propTypes = {
 
 Counter.defaultProps = {
     number: 0,
-    color: 'black',
-    onIncrement: () => console.warn('onIncrement not defined'),
+    color:'black',
+    onIncrement:() => console.warn('onIncrement not defined'),
     onDecrement: () => console.warn('onDecrement not defined'),
     onSetColor: () => console.warn('onSetColor not defined')
-};
-
-export default Counter;
+}
