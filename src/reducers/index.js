@@ -1,8 +1,10 @@
-import * as types from '../actions/ActionTypes';
+import number from './number';
+import color from './color';
+import { combineReducers } from 'redux';
 
-const initialState = {
-    color: 'black',
-    number: 0
-};
+const reducers = combineReducers({
+    numberData: number,
+    colorData: color
+})
 
-//reducer function
+export default reducers;
