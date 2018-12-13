@@ -22,7 +22,6 @@ class App extends Component {
   }
 }
 
-
 // action functions
 const mapToDispatch = (dispatch) => ({
   onCreate: () => dispatch(actions.create(getRandomColor())),
