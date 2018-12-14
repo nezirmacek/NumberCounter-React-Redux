@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/NumberCounter-React-Redux/precache-manifest.1c8246e61d80c622fbaa67cdb7fcd134.js"
+  "/NumberCounter-React-Redux/precache-manifest.a7923670b072aa00ae8c91228dfb7bf6.js"
 );
 
 workbox.clientsClaim();
